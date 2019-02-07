@@ -1,48 +1,26 @@
-<!DOCTYPE html>
-<!-- saved from url=(0057)http://leftshine.gitee.io/viaindex/defaultpage/index.html -->
-<html xmlns="http://www.w3.org/1999/xhtml" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta content="zh-CN" http-equiv="Content-Language">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="xjcc" content="width=device-width, initial-scale=1.0">
 <title>主页</title>
 <style>
-/*下方这句不动它，翻译开始*/
-
-* {
-	padding: 0;
-	margin: 0;
-}
-
-/*翻译
-home整体样式 
-文本对齐︰ 中心;
-背景色︰ #ffffff  使用夜间默认时修改为#000000即可
-}
-*/
-
+html{height:100%;}
 body {
 	text-align: center;
 	background:#ffffff;
 	margin:0 auto;
-    height:100%;
-	padding-top:75px;
+	padding-top:105px;
+	width: 100%;
+	padding:0;
+	position: relative;
+    height: auto;
+    min-height: 100% 
 }
 
 .url
 {
    color:#312520;
 }
-
-
-/*翻译
-logo图标样式 
-宽度︰ 192px;
-高度︰ 108px;
-最大宽度︰ 250px;
-动画︰ flipInX 4s;
--webkit 动画︰ flipInX 4s
-}*/
-
 
 img.smaller {
 	width: 192px;
@@ -52,17 +30,6 @@ img.smaller {
 	-webkit-animation: flipInX 4s
 }
 
-
-
-/*翻译
-logo添加文字样式 
-字体大小︰ 2em;
-白色空间︰ 正常;
-自动换行︰ 断词;
-文本修饰︰ 无;
-颜色: #232323
-}*/
-
 .logo {
 	font-size: 2em;
 	white-space: normal;
@@ -70,19 +37,6 @@ logo添加文字样式
 	text-decoration: none;
 	color: #000000;
 }
-
-/*翻译
-搜索栏字体样式 
-宽度︰ 90%;
-高度︰ 40px;
-背景颜色︰ 透明;
-边境︰ 无;
-大纲︰ 0;
-字体大小︰ 18px;
-字体颜色: #000000;
-填充︰ 0 20px;
-边界半径︰ 50px
-}*/
 
 #search_input {
 	width: 90%;
@@ -96,24 +50,11 @@ logo添加文字样式
 	border-radius: 50px
 }
 
-/*翻译
-搜索框边距 
-下边距︰ 30px;
-上边距︰ 20px;
-*/
-
 .search_part {
 	margin-bottom: 30px;
 	margin-top: 20px;
 }
 
-/*翻译
-跨度样式
-显示︰ 阻止;
-溢出︰ 隐藏;
-左填充︰ 5px;
-垂直对齐︰ 居中;
-*/
 
 span {
 	display: block;
@@ -122,21 +63,6 @@ span {
 	vertical-align: middle;
 }
 
-/*翻译
-搜索栏框架样式 {
-框阴影︰ 0 0 18px rgba(70,70,40,.255);括号里的颜色为Rgb默认，可进入http://rgb.phpddt.com/查询
--webkit 动画︰ fadeIn 2.5;
-动画︰ fadeIn 2.5;
-背景色︰ rgba(255,255,255,.100);
-边界半径︰ 50px;
-显示︰ 表;
-垂直对齐︰ 居中;
-宽度︰ 80%;根据你喜欢的宽度调整，目前我为了对齐图标使用80%
-高度︰ 60px;
-最大宽度︰ 600px;
-边距︰ 10px 默认布局;
-}
-*/
 
 .search_bar {
 	box-shadow: 0 0 18px rgba(70,70,40,.255);
@@ -153,19 +79,6 @@ span {
 }
 
 
-/*翻译
-搜索栏搜索目标确认图标样式，目前为米奇
-轮廓边框︰ 0;
-高度︰ 40px;
-浮标位置︰ 右;
-颜色: #000;
-字体大小︰ 16px;
-字体粗细︰ 700;
-边境︰ 无;
-背景颜色︰ 透明;
-填充︰ 0 13px 0 13px
-*/
-
 #search_submit {
 	outline: 0;
 	height: 40px;
@@ -178,13 +91,6 @@ span {
 	padding: 0 13px 0 13px
 }
 
-/*翻译
-书签图标排版目录样式 
-宽度︰ 100%;
-文本对齐︰ 中心;
-填充顶部︰ 15px;
-填充底部︰ 15px;
-*/
 
 #content {
 	width: 100%;
@@ -192,15 +98,6 @@ span {
 	padding-bottom: 15px;
 }
 
-/*翻译
-书签框架样式
--webkit 动画︰ fadeInDown 1s;
-动画︰ fadeInDown 1s;
-位置︰ 相对应;
-显示︰ 显示在内部;
-宽度︰ 75px;
-边境︰ 0;
-*/
 
 .box {
 	-webkit-animation: fadeInDown 1s;
@@ -212,14 +109,6 @@ span {
 }
 
 
-/*翻译
-书签图标样式
-宽度︰ 100%;
-高度︰ 100%;
-位置︰ 不受限制;
-左︰ 0;
-顶︰ 0;
-*/
 
 .box a {
 	width: 100%;
@@ -229,24 +118,6 @@ span {
 	top: 0;
 }
 
-/*翻译
-书签字体样式
-颜色: #232323;使用夜间模式时修改为#eee或者#f2eada即可
-高度︰ 1.5em;
-线的高度︰ 1.5em;
-宽度︰ 72px;
-字体大小︰ 0.75em;
-白色空间︰ nowrap;
-溢出︰ 隐藏;
-边距︰ 默认布局;
--webkit 边框顶部右半径︰ 5px;
--webkit 边框底部右半径︰ 5px;
-文本溢出︰ 省略;
--o 文本溢出︰ 省略;
-气相色谱-质谱-文本-溢出︰ 省略;
-填充顶部︰ 3px;
-填充底部︰ 8px;
-*/
 
 .url {
 	color:#000;
@@ -266,12 +137,6 @@ span {
 	padding-bottom: 8px;
 }
 
-/*翻译
-字体样式 
-宽度︰ 3em;
-高度︰ 3em;
-最大宽度︰ 72px;
-*/
 
 .icon {
 	width: 3em;
@@ -279,9 +144,7 @@ span {
 	max-width: 72px;
 }
 
-/*
-下方为动画样式，不懂的不要修改
-*/
+
 input {outline:none;}
 .box:focus {  
     outline:none;  
@@ -291,24 +154,17 @@ input {outline:none;}
 .box:visited{
 	display:block;
 	text-decoration:none;}
-/*
-.box:hover{
-        overflow: hidden;
-	border: none;
-	outline:none;
-			}
-.url:hover{
-	color:#F9C;}
-*/
+
 .url,.url:visited{
 	display:block;
 	color:#000;
 	text-decoration:none;}
-/*
-.box p:hover{
-	color:#936;
-	text-decoration:underline;}
-*/
+
+
+.smaller {
+	z-index:0;
+}
+
 @-webkit-keyframes flipInX {
 	0% {
 		-webkit-transform: perspective(400px) rotateX(90deg);
@@ -409,42 +265,55 @@ input {outline:none;}
 		-ms-transform: translateY(0);
 		transform: translateY(0)
 	}
-html,body{height: 100%;width: 100%;margin:0;padding:0;}  
-
-
-
 }
-</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./home_files/translateelement.css"></head>
+.header{padding-bottom:200px;}
+.main{padding-bottom:200px;}
+.footer{  
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:100px;
+   padding-bottom:80px;
+}  
+
+
+</style>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./home_files/translateelement.css">
+</head>
 
 
 <body id="web_bg">
-<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="0" count="99" src="home_files/canvas-nest.min.js"></script>
-<script async type="text/javascript" size="90" alpha="0.2" zIndex="1" src="home_files/ribbon.min.js"></script>
-	
-	
+<script type="text/javascript" color="25,0,255" opacity='0.7' zIndex="-1" count="199" src="home_files/canvas-nest.js"></script>
+<script async type="text/javascript" size="110" alpha="0.2" zIndex="3" src="home_files/ribbon.min.js"></script>
+
+
+
+<div class="header">
 <!--
 <img class="ct" src="./home_files/7.png" width="384px" height="216px">
 -->
+</div>
+
 <br>
 	
+<div class="main">
+
 <div id="content">
 <div class="search_part">
 <a class="logo">
-<img class="smaller" src="./home_files/GoogleLogo2.gif">
+<img class="smaller" zIndex="-5" src="./home_files/GoogleLogo.gif">
 </a>
 <form onsubmit="return search()" class="search_bar">
 <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" id="search_submit" value="搜索"></font></font>
 <span><input class="search" type="text" value="" autocomplete="off" id="search_input"></span>
 </form>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+</div>
+
+</div>
+
+<div class="footer">
+
 <div class="box" style="outline:none"> 
 <a href="https://www.google.com/"></a>
 <p><img class="icon" src="./home_files/Google.png"></p>
@@ -564,25 +433,6 @@ html,body{height: 100%;width: 100%;margin:0;padding:0;}
 
 
 
-<!--
-<div class="box">
-<a href="http://nssp.zzidc.com/hyzx/site/toVhostPlatform.action"></a>
-<p><img class="icon" src="./home_files/cl.PNG"></p>
-<p class="emm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务器</font></font></p>
-</div>
-<!--
-如若要添加可复制一段
-<div class="box">
-<a href="地址"></a>
-<p><img class="icon" src="img/icon6.png" ></p>
-<p class="url">书签名称</p>
-</div>
-其中链接在href中如href="地址"建议填写folder://自己创建的文件夹地址，这样创建一次不必再修改
-图标文件放置在img文件夹中定义如src="img/icon6.png"
-显示的标题在<p class="url">书签名称</p>之间定义如<p class="url">酷安</p>
-下方window.location.href =home搜索引擎地址，目前为自用Pc版百度内部搜索，加上浏览器的顶部搜索即为双搜索，使用更方便
-
--->
 
 </div>
 

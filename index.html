@@ -1,447 +1,300 @@
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta content="zh-CN" http-equiv="Content-Language">
-<meta name="xjcc" content="width=device-width, initial-scale=1.0">
-<title>主页</title>
-<style>
-html{height:100%;}
-body {
-	text-align: center;
-	background:#ffffff;
-	margin:0 auto;
-	padding-top:105px;
-	width: 100%;
-	padding:0;
-	position: relative;
-    height: auto;
-    min-height: 100% 
-}
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="zh-CN" http-equiv="Content-Language">
+	<meta name="xjcc" content="width=device-width, initial-scale=1.0">
+	<title>主页</title>
 
-.url
-{
-   color:#312520;
-}
-
-img.smaller {
-	width: 192px;
-	height: 108px;
-	max-width: 250px;
-	animation: flipInX 4s;
-	-webkit-animation: flipInX 4s
-}
-
-.logo {
-	font-size: 2em;
-	white-space: normal;
-	word-wrap: break-word;
-	text-decoration: none;
-	color: #000000;
-}
-
-#search_input {
-	width: 90%;
-	height: 40px;
-	background-color: transparent;
-	border: none;
-	outline: 0;
-	font-size: 18px;
-	color: #000;
-	padding: 0 20px;
-	border-radius: 50px
-}
-
-.search_part {
-	margin-bottom: 30px;
-	margin-top: 20px;
-}
-
-
-span {
-	display: block;
-	overflow: hidden;
-	padding-left: 5px;
-	vertical-align: middle;
-}
-
-
-.search_bar {
-	box-shadow: 0 0 18px rgba(70,70,40,.255);
-	-webkit-animation: fadeIn 2.5s;
-	animation: fadeIn 2.5s;
-	background-color: rgba(255,255,255,.100);
-	border-radius: 50px;
-	display: table;
-	vertical-align: middle;
-	width: 85%;
-	height: 40px;
-	max-width: 600px;
-	margin: 10px auto;
-}
-
-
-#search_submit {
-	outline: 0;
-	height: 40px;
-	float: right;
-	color: #F69;
-	font-size: 16px;
-	font-weight: 700;
-	border: none;
-	background-color: transparent;
-	padding: 0 13px 0 13px
-}
-
-
-#content {
-	width: 100%;
-	text-align: center;
-	padding-bottom: 15px;
-}
-
-
-.box {
-	-webkit-animation: fadeInDown 1s;
-	animation: fadeInDown 1s;
-	position: relative;
-	display: inline-block;
-	width: 75px;
-	border: 0;
-}
-
-
-
-.box a {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-
-.url {
-	color:#000;
-	height: 1.7em;
-	line-height: 1.7em;
-	width: 72px;
-	font-size: 0.75em;
-	white-space: nowrap;
-	overflow: hidden;
-	margin: auto;
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	text-overflow: ellipsis;
-	-o-text-overflow: ellipsis;
-	-ms-text-overflow: ellipsis;
-	padding-top: 3px;
-	padding-bottom: 8px;
-}
-
-
-.icon {
-	width: 3em;
-	height: 3em;
-	max-width: 72px;
-}
-
-
-input {outline:none;}
-.box:focus {  
-    outline:none;  
-	border: none;
-}  
-
-.box:visited{
-	display:block;
-	text-decoration:none;}
-
-.url,.url:visited{
-	display:block;
-	color:#000;
-	text-decoration:none;}
-
-
-.smaller {
-	z-index:0;
-}
-
-@-webkit-keyframes flipInX {
-	0% {
-		-webkit-transform: perspective(400px) rotateX(90deg);
-		transform: perspective(400px) rotateX(90deg);
-		opacity: 0
-	}
-
-	40% {
-		-webkit-transform: perspective(400px) rotateX(-10deg);
-		transform: perspective(400px) rotateX(-10deg)
-	}
-
-	70% {
-		-webkit-transform: perspective(400px) rotateX(10deg);
-		transform: perspective(400px) rotateX(10deg)
-	}
-
-	100% {
-		-webkit-transform: perspective(400px) rotateX(0);
-		transform: perspective(400px) rotateX(0);
-		opacity: 1
-	}
-}
-
-@keyframes flipInX {
-	0% {
-		-webkit-transform: perspective(400px) rotateX(90deg);
-		-ms-transform: perspective(400px) rotateX(90deg);
-		transform: perspective(400px) rotateX(90deg);
-		opacity: 0
-	}
-
-	40% {
-		-webkit-transform: perspective(400px) rotateX(-10deg);
-		-ms-transform: perspective(400px) rotateX(-10deg);
-		transform: perspective(400px) rotateX(-10deg)
-	}
-
-	70% {
-		-webkit-transform: perspective(400px) rotateX(10deg);
-		-ms-transform: perspective(400px) rotateX(10deg);
-		transform: perspective(400px) rotateX(10deg)
-	}
-
-	100% {
-		-webkit-transform: perspective(400px) rotateX(0);
-		-ms-transform: perspective(400px) rotateX(0);
-		transform: perspective(400px) rotateX(0);
-		opacity: 1
-	}
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0
-	}
-
-	100% {
-		opacity: 1
-	}
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0
-	}
-
-	100% {
-		opacity: 1
-	}
-}
-
-@-webkit-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px)
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-		transform: translateY(0)
-	}
-}
-
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(-20px);
-		-ms-transform: translateY(-20px);
-		transform: translateY(-20px)
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0)
-	}
-}
-.header{padding-bottom:200px;}
-.main{padding-bottom:200px;}
-.footer{  
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:100px;
-   padding-bottom:105px;
-}  
-
-
-</style>
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="./home_files/translateelement.css">
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			text-align: center;
+			background:#ffffff;
+			margin:0 auto;
+			padding-top:105px;
+			width: 100%;
+			padding:0;
+			position: relative;
+			height: auto;
+			min-height: 100% 
+		}
+		.header{
+			padding-bottom:180px;
+		}
+		.footer{  
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:100px;
+			padding-bottom:80px;
+		}
+		#content {
+			padding-bottom:215px;
+			width: 100%;
+			text-align: center;
+		}
+		.box {
+			-webkit-animation: fadeInDown 1s;
+			animation: fadeInDown 1s;
+			position: relative;
+			display: inline-block;
+			width: 75px;
+			border: 0;
+		}
+		.box a {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.url {
+			color:#000;
+			height: 1.7em;
+			line-height: 1.7em;
+			width: 72px;
+			font-size: 0.75em;
+			white-space: nowrap;
+			overflow: hidden;
+			margin: auto;
+			-webkit-border-top-right-radius: 5px;
+			-webkit-border-bottom-right-radius: 5px;
+			text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+			-ms-text-overflow: ellipsis;
+			padding-top: 3px;
+			padding-bottom: 8px;
+		}
+		.icon {
+			width: 3em;
+			height: 3em;
+			max-width: 72px;
+		}
+		input {
+			outline:none;
+		}
+		.box:focus {  
+			outline:none;  
+			border: none;
+		}
+		#smaller {
+			width: 192px;
+			height: 108px;
+			max-width: 250px;
+			animation: flipInX 4s;
+			-webkit-animation: flipInX 4s;
+			z-index:0;
+		}
+		span {
+			display: block;
+			overflow: hidden;
+			padding-left: 5px;
+			vertical-align: middle;
+		}
+		
+		#search_input {
+			width: 90%;
+			height: 40px;
+			background-color: transparent;
+			border: none;
+			outline: 0;
+			font-size: 18px;
+			color: #000;
+			padding: 0 20px;
+			border-radius: 50px
+		}
+		.search_part {
+			margin-bottom: 30px;
+			margin-top: 20px;
+		}
+		.search_bar {
+			box-shadow: 0 0 18px rgba(70,70,40,.255);
+			-webkit-animation: fadeIn 2.5s;
+			animation: fadeIn 2.5s;
+			background-color: rgba(255,255,255,.100);
+			border-radius: 50px;
+			display: table;
+			vertical-align: middle;
+			width: 85%;
+			height: 40px;
+			max-width: 600px;
+			margin: 10px auto;
+		}
+		#search_submit {
+			outline: 0;
+			height: 40px;
+			float: right;
+			color: #F69;
+			font-size: 16px;
+			font-weight: 700;
+			border: none;
+			background-color: transparent;
+			padding: 0 13px 0 13px
+		}
+		
+	</style>
+	<script>
+		window.onload = function(){
+			var hour=new Date().getHours().toLocaleString();
+			if(hour>=22||hour<7)
+			{	<!-- 晚上打开夜间模式 -->
+				document.getElementById("smaller").src="./home_files/GoogleLogo.png"
+				document.getElementById("a").style.backgroundColor = "#000";
+				var aP = document.getElementsByClassName("url")
+				for(var i=0;i<aP.length;i++)
+				aP[i].style.color = "#fff";
+			}
+		}
+	</script>
 </head>
 
 
-<body>
+<body id="a">
+	<!-- 彩条 -->
+	<script async type="text/javascript" size="110" alpha="0.1" zIndex="3" src="home_files/ribbon.min.js"></script>
+	<!-- 悬浮粒子 -->
+	<script type="text/javascript" color="220,159,180" pointColor="220,159,180" opacity='0.7' zIndex="-2" count="80" src="home_files/canvas-nest.js"></script>
+	<script type="text/javascript" color="134,193,102" pointColor="134,193,102" opacity='0.7' zIndex="-2" count="50" src="home_files/canvas-nest.js"></script>
+	<script type="text/javascript" color="36,147,110" pointColor="36,147,110" opacity='0.7' zIndex="-2" count="50" src="home_files/canvas-nest.js"></script>
+	<script type="text/javascript" color="134,166,151" pointColor="134,166,151" opacity='0.7' zIndex="-2" count="80" src="home_files/canvas-nest.js"></script>
+
+	<!-- 搜索框上面小图 -->
+	<div class="header">
+	<!--
+	<img class="ct" src="./home_files/7.png" width="384px" height="216px">
+	-->
+	</div>
 	
-<script async type="text/javascript" size="110" alpha="0.1" zIndex="3" src="home_files/ribbon.min.js"></script>
+	<div id="content">
+		<div class="search_part">
+		<a class="logo">
+			<img id="smaller" src="./home_files/GoogleLogo.gif">
+		</a>
+		<form onsubmit="return search()" class="search_bar">
+			<font style="vertical-align: inherit;">
+				<font style="vertical-align: inherit;">
+					<input type="submit" id="search_submit" value="搜索"></input>
+				</font>
+			</font>
+			<span><input class="search" type="text" value="" autocomplete="off" id="search_input"></input></span>
+		</form>
+		</div>
+	</div>
+
+
+	<div class="footer">
+
+		<div class="box" style="outline:none"> 
+		<a href="https://www.google.com/"></a>
+		<p><img class="icon" src="./home_files/Google.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">谷歌</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="http://fanyi.baidu.com"></a>
+		<p><img class="icon" src="./home_files/fy.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://mail.qq.com"></a>
+		<p><img class="icon" src="./home_files/yx.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮箱</font></font></p>
+		</div>
+			
+		<div class="box">
+		<a href="https://pan.baidu.com/"></a>
+		<p><img class="icon" src="./home_files/bdy.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">百度云</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://www.weibo.com/"></a>
+		<p><img class="icon" src="./home_files/wb1.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微博</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://www.zhihu.com/"></a>
+		<p><img class="icon" src="./home_files/zh.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">知乎</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://www.taobao.com/"></a>
+		<p><img class="icon" src="./home_files/tb1.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">淘宝</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://www.jd.com/"></a>
+		<p><img class="icon" src="./home_files/jd.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">京东</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="http://www.dilidili.wang/"></a>
+		<p><img class="icon" src="./home_files/dldl.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dilidili</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="http://www.acfun.cn/"></a>
+		<p><img class="icon" src="./home_files/ac.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AC Fun</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://www.bilibili.com/"></a>
+		<p><img class="icon" src="./home_files/dm.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bilibili</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://github.com/"></a>
+		<p><img class="icon" src="./home_files/github.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://www.mosoteach.cn/web/"></a>
+		<p><img class="icon" src="./home_files/lmy.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">蓝墨云</font></font></p>
+		</div>
+
+		<div class="box"> 
+		<a href="https://pintia.cn/"></a>
+		<p><img class="icon" src="./home_files/PPTV.PNG"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PTA</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="http://youku.com/"></a>
+		<p><img class="icon" src="./home_files/yk.PNG"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优酷</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="https://v.qq.com/"></a>
+		<p><img class="icon" src="./home_files/txsp.PNG"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">腾讯视频</font></font></p>
+		</div>
+
+		<div class="box">
+		<a href="http://www.iqiyi.com/"></a>
+		<p><img class="icon" src="./home_files/aqy.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爱奇艺</font></font></p>
+		</div>
+			
+		<div class="box">
+		<a href="https://www.douyu.com/"></a>
+		<p><img class="icon" src="./home_files/dy.png"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">斗鱼</font></font></p>
+		</div>
+
+	</div>
 	
-<script type="text/javascript" color="220,159,180" pointColor="220,159,180" opacity='0.7' zIndex="0" count="80" src="home_files/canvas-nest.js"></script>
-<script type="text/javascript" color="134,166,151" pointColor="134,166,151" opacity='0.7' zIndex="0" count="80" src="home_files/canvas-nest.js"></script>
-
-
-
-
-
-<div class="header">
-<!--
-<img class="ct" src="./home_files/7.png" width="384px" height="216px">
--->
-</div>
-
-<br>
-	
-<div class="main">
-
-<div id="content">
-<div class="search_part">
-<a class="logo">
-<img class="smaller" zIndex="-5" src="./home_files/GoogleLogo.gif">
-</a>
-<form onsubmit="return search()" class="search_bar">
-<font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" id="search_submit" value="搜索"></font></font>
-<span><input class="search" type="text" value="" autocomplete="off" id="search_input"></span>
-</form>
-</div>
-</div>
-
-</div>
-
-<div class="footer">
-
-<div class="box" style="outline:none"> 
-<a href="https://www.google.com/"></a>
-<p><img class="icon" src="./home_files/Google.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">谷歌</font></font></p>
-</div>
-
-
-
-<div class="box">
-<a href="http://fanyi.baidu.com"></a>
-<p><img class="icon" src="./home_files/fy.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://mail.qq.com"></a>
-<p><img class="icon" src="./home_files/yx.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮箱</font></font></p>
-</div>
-	
-<div class="box">
-<a href="https://pan.baidu.com/"></a>
-<p><img class="icon" src="./home_files/bdy.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">百度云</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://www.weibo.com/"></a>
-<p><img class="icon" src="./home_files/wb1.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微博</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://www.zhihu.com/"></a>
-<p><img class="icon" src="./home_files/zh.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">知乎</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://www.taobao.com/"></a>
-<p><img class="icon" src="./home_files/tb1.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">淘宝</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://www.jd.com/"></a>
-<p><img class="icon" src="./home_files/jd.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">京东</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://www.youtube.com/"></a>
-<p><img class="icon" src="./home_files/youtube2.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube</font></font></p>
-</div>
-
-<div class="box">
-<a href="http://www.acfun.cn/"></a>
-<p><img class="icon" src="./home_files/ac.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AC Fun</font></font></p>
-</div>
-
-
-<div class="box">
-<a href="https://www.bilibili.com/"></a>
-<p><img class="icon" src="./home_files/dm.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bilibili</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://github.com/"></a>
-<p><img class="icon" src="./home_files/github.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></p>
-</div>
-
-
-<div class="box">
-<a href="https://www.mosoteach.cn/web/"></a>
-<p><img class="icon" src="./home_files/lmy.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">蓝墨云</font></font></p>
-</div>
-
-<div class="box"> 
-<a href="https://pintia.cn/"></a>
-<p><img class="icon" src="./home_files/PPTV.PNG"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PTA</font></font></p>
-</div>
-
-<div class="box">
-<a href="http://youku.com/"></a>
-<p><img class="icon" src="./home_files/yk.PNG"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优酷</font></font></p>
-</div>
-
-<div class="box">
-<a href="https://v.qq.com/"></a>
-<p><img class="icon" src="./home_files/txsp.PNG"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">腾讯视频</font></font></p>
-</div>
-
-<div class="box">
-<a href="http://www.iqiyi.com/"></a>
-<p><img class="icon" src="./home_files/aqy.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爱奇艺</font></font></p>
-</div>
-	
-<div class="box">
-<a href="https://www.douyu.com/"></a>
-<p><img class="icon" src="./home_files/dy.png"></p>
-<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">斗鱼</font></font></p>
-</div>
-
-
-
-
-</div>
-
-<script type="text/javascript">function search(){if(document.getElementById("search_input").value != ""){window.location.href = "https://www.baidu.com/s?word=" + document.getElementById("search_input").value;document.getElementById("search_input").value = "";}return false;}</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./home_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
-
-
-
-<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
-</div>
-</div>
 </body>
 </html>

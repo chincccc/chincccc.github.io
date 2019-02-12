@@ -22,7 +22,7 @@
 			min-height: 100% 
 		}
 		.header{
-			padding-bottom:180px;
+			padding-bottom:200px;
 		}
 		.footer{  
 			position:absolute;
@@ -132,7 +132,7 @@
 			font-weight: 700;
 			border: none;
 			background-color: transparent;
-			padding: 0 13px 0 13px
+			padding: 0 13px 1px 17px;
 		}
 		
 	</style>
@@ -176,7 +176,7 @@
 		<form onsubmit="return search()" class="search_bar">
 			<font style="vertical-align: inherit;">
 				<font style="vertical-align: inherit;">
-					<input type="submit" id="search_submit" value="搜索"></input>
+					<input type="submit" id="search_submit" value="百度"></input>
 				</font>
 			</font>
 			<span><input class="search" type="text" value="" autocomplete="off" id="search_input"></input></span>
@@ -304,6 +304,6 @@
 			window.location.href = "https://www.baidu.com/s?word=" + document.getElementById("search_input").value;document.getElementById("search_input").value = "";
 		}return false;
 	}
-</script>
+	</script>
 </body>
 </html>

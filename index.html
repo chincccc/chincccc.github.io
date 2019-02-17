@@ -103,7 +103,7 @@
 			outline: 0;
 			font-size: 18px;
 			color: #000;
-			padding: 0 20px;
+			padding-right:5px;
 			border-radius: 50px
 		}
 		.search_part {
@@ -132,7 +132,18 @@
 			font-weight: 700;
 			border: none;
 			background-color: transparent;
-			padding: 0 13px 1px 17px;
+			padding: 0 17px 1px 0px;
+		}
+		#search_submit2 {
+			outline: 0;
+			height: 40px;
+			float: left;
+			color: #F69;
+			font-size: 16px;
+			font-weight: 700;
+			border: none;
+			background-color: transparent;
+			padding: 0 0px 1px 17px;
 		}
 		
 	</style>
@@ -161,6 +172,7 @@
 	<script type="text/javascript" color="36,147,110" pointColor="36,147,110" opacity='1' zIndex="-2" count="40" src="home_files/canvas-nest.js"></script>
 	<script type="text/javascript" color="134,166,151" pointColor="134,166,151" opacity='1' zIndex="-2" count="40" src="home_files/canvas-nest.js"></script>
 
+	
 	<!-- 搜索框上面小图 -->
 	<div class="header">
 	<!--
@@ -177,6 +189,7 @@
 			<font style="vertical-align: inherit;">
 				<font style="vertical-align: inherit;">
 					<input type="submit" id="search_submit" value="百度"></input>
+					<button type="button" id="search_submit2" onclick="fungg()">谷歌</button>
 				</font>
 			</font>
 			<span><input class="search" type="text" value="" autocomplete="off" id="search_input"></input></span>
@@ -302,6 +315,15 @@
 	{
 		if(document.getElementById("search_input").value != ""){
 			window.location.href = "https://www.baidu.com/s?word=" + document.getElementById("search_input").value;document.getElementById("search_input").value = "";
+		}return false;
+	}
+	</script>
+	
+	<script type="text/javascript">
+	function fungg()
+	{
+		if(document.getElementById("search_input").value != ""){
+			window.location.href = "https://www.google.com/search?source=hp&ei=3WBpXJHzFMmM0wLMthc&q=" + document.getElementById("search_input").value;document.getElementById("search_input").value = "";
 		}return false;
 	}
 	</script>

@@ -194,7 +194,7 @@
 			<font style="vertical-align: inherit;">
 				<font style="vertical-align: inherit;">
 					<input type="submit" id="search_submit" value="百度"></input>
-					<button type="button" id="search_submit2" onclick="fungg()">谷歌</button>
+					<button type="button" id="search_submit2" onclick="bing()">必应</button>
 				</font>
 			</font>
 			<span><input class="search" type="text" value="" autocomplete="off" id="search_input"></input></span>
@@ -329,6 +329,15 @@
 	{
 		if(document.getElementById("search_input").value != ""){
 			window.location.href = "https://www.google.com/search?source=hp&ei=3WBpXJHzFMmM0wLMthc&q=" + document.getElementById("search_input").value;document.getElementById("search_input").value = "";
+		}return false;
+	}
+	</script>
+
+	<script type="text/javascript">
+	function bing()
+	{
+		if(document.getElementById("search_input").value != ""){
+			window.location.href = "https://cn.bing.com/search?q=" + document.getElementById("search_input").value;document.getElementById("search_input").value = "";
 		}return false;
 	}
 	</script>

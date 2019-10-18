@@ -36,6 +36,12 @@
 			width: 100%;
 			text-align: center;
 		}
+		.logo{
+			user-seletct: none;
+			-webkit-user-seletct: none;
+			-moz-user-seletct: none;
+			-ms-user-seletct: none;
+		}
 		.box {
 			-webkit-animation: fadeInDown 1s;
 			animation: fadeInDown 1s;
@@ -188,7 +194,7 @@
 	
 	<div id="content">
 		<div class="search_part">
-		<a class="logo">
+		<a class="logo" zIndex="-3">
 			<img id="smaller" src="./home_files/GoogleLogo.gif">
 		</a>
 		<form onsubmit="return search()" class="search_bar">

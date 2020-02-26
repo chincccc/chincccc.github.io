@@ -36,12 +36,6 @@
 			width: 100%;
 			text-align: center;
 		}
-		.logo{
-			user-seletct: none;
-			-webkit-user-seletct: none;
-			-moz-user-seletct: none;
-			-ms-user-seletct: none;
-		}
 		.box {
 			-webkit-animation: fadeInDown 1s;
 			animation: fadeInDown 1s;
@@ -57,6 +51,9 @@
 			left: 0;
 			top: 0;
 		}
+		li{
+            list-style: none;
+        }
 		.url {
 			color:#000;
 			height: 1.7em;
@@ -74,6 +71,19 @@
 			padding-top: 3px;
 			padding-bottom: 8px;
 		}
+		#ul{
+            border: 0px;
+            margin:0px 23px 15px 0px
+        }
+       #ul a{
+            display: inline-block;
+            width: 100%;
+            text-decoration: none;
+            color: rgba(0,0,0,0.8) ;
+            outline: none;
+            height: 30px;
+            line-height: 30px;
+        }
 		.icon {
 			width: 3em;
 			height: 3em;
@@ -92,11 +102,7 @@
 			max-width: 250px;
 			animation: flipInX 4s;
 			-webkit-animation: flipInX 4s;
-			z-index:-2;
-			user-seletct: none;
-			-webkit-user-seletct: none;
-			-moz-user-seletct: none;
-			-ms-user-seletct: none;
+			z-index:0;
 		}
 		span {
 			display: block;
@@ -113,7 +119,7 @@
 			outline: 0;
 			font-size: 18px;
 			color: #000;
-			padding-right:5px;
+			padding-right:0px;
 			border-radius: 50px
 		}
 		.search_part {
@@ -142,7 +148,7 @@
 			font-weight: 700;
 			border: none;
 			background-color: transparent;
-			padding: 0 17px 1px 0px;
+			padding: 2px 23px 2px 0px;
 		}
 		#search_submit2 {
 			outline: 0;
@@ -153,7 +159,7 @@
 			font-weight: 700;
 			border: none;
 			background-color: transparent;
-			padding: 0 0px 1px 17px;
+			padding: 2px 0px 2px 23px;
 		}
 		
 	</style>
@@ -176,7 +182,7 @@
 
 <body id="a">
 	<!-- 彩条 -->
-	<script async type="text/javascript" size="110" alpha="0.1" zIndex="2" src="home_files/ribbon.min.js"></script>
+	<script async type="text/javascript" size="110" alpha="0.1" zIndex="3" src="home_files/ribbon.min.js"></script>
 	<!-- 悬浮粒子 -->
 	<!--
 	<script type="text/javascript" color="220,159,180" pointColor="220,159,180" opacity='1' zIndex="-2" count="50" src="home_files/canvas-nest.js"></script>
@@ -185,8 +191,7 @@
 	
 	<script type="text/javascript" color="36,147,110" pointColor="36,147,110" opacity='1' zIndex="-2" count="40" src="home_files/canvas-nest.js"></script>
 	<script type="text/javascript" color="134,166,151" pointColor="134,166,151" opacity='1' zIndex="-2" count="40" src="home_files/canvas-nest.js"></script>
- 	-->
- 	<!--
+ 	
 	<script type="text/javascript" color="134,193,102" opacity="0.5" count="89" src="home_files/canvas2.js"></script>
 	-->
 	<!-- 搜索框上面小图 -->
@@ -198,9 +203,9 @@
 	
 	<div id="content">
 		<div class="search_part">
-		<a class="logo" zIndex="-3">
+		<div class="logo">
 			<img id="smaller" src="./home_files/GoogleLogo.gif">
-		</a>
+		</div>
 		<form onsubmit="return search()" class="search_bar">
 			<font style="vertical-align: inherit;">
 				<font style="vertical-align: inherit;">
@@ -208,17 +213,20 @@
 					<button type="button" id="search_submit2" onclick="bing()">必应</button>
 				</font>
 			</font>
-			<span><input class="search" type="text" value="" autocomplete="off" id="search_input"></input></span>
+			<span>
+				<input class="search" type="text" value="" autocomplete="off" id="search_input"></input>
+				<ul id="ul" style="text-align:center"></ul>
+        	</span>
 		</form>
 		</div>
 	</div>
 
 
 	<div class="footer">
-		
+
 		<div class="box" style="outline:none"> 
 		<a href="https://www.chincc.tk//"></a>
-		<p><img class="icon" src="https://sspan.chin.workers.dev/表情包/nn.png"></p>
+		<p><img class="icon" src="./home_files/zhs.png"></p>
 		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">停车场</font></font></p>
 		</div>
 
@@ -332,6 +340,31 @@
 
 	</div>
 	
+	<script>
+        var input = document.getElementById('search_input')
+        var oUl = document.getElementById('ul')
+        oUl.style.display = 'none';
+        input.onkeyup = function () {
+            var value = this.value;
+            var oScript = document.createElement('script');
+            oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=aa'
+            document.body.appendChild(oScript)
+        }
+        function aa(data) {
+            oUl.style.display = 'block';
+            var list = data.s;
+            var str = '';
+            if (list.length > 0) {
+                list.forEach(function (ele, index) {
+                    str += '<li><a href ="https://www.baidu.com/s?wd=' + ele + '">' + ele + '</li>';
+                })
+                oUl.innerHTML = str;
+            } else {
+                oUl.style.display = 'none';
+            }
+        }
+    </script>
+	
 	<script type="text/javascript">
 	function search()
 	{
@@ -358,5 +391,8 @@
 		}return false;
 	}
 	</script>
+	
+	
+	
 </body>
 </html>

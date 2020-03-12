@@ -58,6 +58,7 @@
 }
 .waifu-tool span:hover {
     color: #34495e;
+    cursor:url(../miku2.png),auto;
 }
 .waifu #live2d{
     position: relative;

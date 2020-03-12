@@ -54,7 +54,7 @@ $('.waifu-tool .fui-info-circle').click(function (){
 
 $('.waifu-tool .fui-cross').click(function (){
     sessionStorage.setItem('waifu-dsiplay', 'none');
-    showMessage('愿你有一天能与重要的人重逢', 1300, true);
+    showMessage('死变态,才弄完人家就让人家消失', 1300, true);
     window.setTimeout(function() {$('.waifu').hide();}, 1300);
 });
 
@@ -139,7 +139,7 @@ function showHitokoto(){
     $.getJSON('https://v1.hitokoto.cn',function(result){
         var text = '这句一言来自 『{source}』。';
         text = text.render({source: result.from, creator: result.creator});
-        showMessage(result.hitokoto, 5000);
+        showMessage(result.hitokoto, 8000);
         window.setTimeout(function() {showMessage(text, 3000);}, 5000);
     });
 	/*

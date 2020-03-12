@@ -66,11 +66,10 @@ $('.waifu-tool .fui-photo').click(function (){
 
 (function (){
     var text;
-    var thispage=window.location.href;
     var SiteIndexUr1 = 'https://home.chincc.tk/';// 手动指定主页
     //var SiteIndexUrl = window.location.protocol+'//'+window.location.hostname+'/';  // 自动获取主页
     
-    if (thispage.contains("chincc.tk")) {      // 如果是主页
+    if (true) {      // 如果是主页
         var now = (new Date()).getHours();
         if (now > 23 || now <= 5) {
             text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛';
@@ -138,7 +137,7 @@ function elseActed() {
 function showHitokoto(){
 	/* 增加 hitokoto.cn API */
     $.getJSON('https://v1.hitokoto.cn',function(result){
-        var text = '这句一言来自 <span style="color:#0099cc;">『{source}』</span>。';
+        var text = '这句一言来自 『{source}』。';
         text = text.render({source: result.from, creator: result.creator});
         showMessage(result.hitokoto, 5000);
         window.setTimeout(function() {showMessage(text, 3000);}, 5000);

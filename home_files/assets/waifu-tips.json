@@ -6,7 +6,7 @@
         },
         {
             "selector": ".fui-home",
-            "text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦"]
+            "text": ["要..要开车了吗"]
         },
         {
             "selector": "#tor_show",

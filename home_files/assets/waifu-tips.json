@@ -14,7 +14,15 @@
         },
         {
             "selector": "#comment_go,.fui-chat",
-            "text": ["想要去评论些什么吗？"]
+            "text": ["想要我说什么吗？"]
+        },
+		{
+            "selector": ".fui-user",
+            "text": ["想要我换件衣服吗？ 你可不许偷看哦!"]
+        },
+		{
+            "selector": ".fui-photo",
+            "text": ["咦 偷拍什么的最讨厌了 我要叫警察叔叔了!"]
         },
         {
             "selector": "#night_mode",

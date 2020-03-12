@@ -1,8 +1,8 @@
 .waifu {
     position: fixed;
     bottom: 0;
-    left: -3;
-    z-index: 3;
+    left:0;
+    z-index: 1;
     font-size: 0;
     transition: all .3s ease-in-out;
     -webkit-transform: translateY(3px);
@@ -19,8 +19,8 @@
 }
 .waifu-tips {
     opacity: 0;
-    width: 260px;
-    height: 70px;
+    width: 270px;
+	bottom: 80px;
     margin: -105px 20px;
     padding: 5px 10px;
     border: 1px solid rgba(224, 186, 140, 0.62);
@@ -30,7 +30,7 @@
     font-size: 12px;
     text-overflow: ellipsis;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     animation-delay: 5s;
     animation-duration: 50s;
     animation-iteration-count: infinite;
@@ -40,10 +40,11 @@
 .waifu-tool {
     display: none;
     color: #aaa;
-    top: 50px;
-    right: 10px;
     font-size: 14px;
-    position: absolute;
+    position: fixed;
+    bottom: 9px;
+    left: 10px;
+	
 }
 .waifu:hover .waifu-tool {
     display: block;

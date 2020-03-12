@@ -14,27 +14,27 @@
 			text-align: center;
 			background:#ffffff;
 			margin:0 auto;
-			padding-top:105px;
+			padding-top:100px;
 			width: 100%;
 			padding:0;
 			position: relative;
 			height: auto;
-			min-height: 100% 
 		}
 		.header{
 			padding-bottom:200px;
 		}
-		.footer{  
-			position:absolute;
-			bottom:0;
-			width:100%;
-			height:100px;
-			padding-bottom:80px;
-		}
 		#content {
-			padding-bottom:215px;
+			padding-bottom:260px;
 			width: 100%;
 			text-align: center;
+		}
+		.footer{  
+			position:relative;
+			margin:0 auto;
+			bottom:0;
+			
+			z-index:2;
+			max-width: 650px;
 		}
 		.box {
 			-webkit-animation: fadeInDown 1s;
@@ -162,6 +162,7 @@
 			padding: 2px 0px 2px 23px;
 		}
 		
+		
 	</style>
 	<script>
 		window.onload = function(){
@@ -169,6 +170,8 @@
 			if(hour>=22||hour<7)
 			{	<!-- 晚上打开夜间模式 -->
 				document.getElementById("smaller").src="./home_files/GoogleLogo.png";
+				document.getElementById("cow").src="./home_files/cow_yoru.png";
+				document.getElementById("github").src="./home_files/github_yoru.png";
 				document.getElementById("a").style.backgroundColor = "#000";
 				var aP = document.getElementsByClassName("url");
 				for(var i=0;i<aP.length;i++)
@@ -177,6 +180,10 @@
 			}
 		}
 	</script>
+	
+	<link rel="stylesheet" type="text/css" href="home_files/assets/waifu.css"/>
+	<script src="home_files/assets/jquery.min.js"></script>
+	
 </head>
 
 
@@ -255,9 +262,9 @@
 		</div>
 
 		<div class="box">
-		<a href="https://www.weibo.com/"></a>
-		<p><img class="icon" src="./home_files/wb1.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微博</font></font></p>
+		<a href="https://cowtransfer.com/"></a>
+		<p><img class="icon" src="./home_files/cow.png" id="cow"></p>
+		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快传</font></font></p>
 		</div>
 
 		<div class="box">
@@ -267,21 +274,9 @@
 		</div>
 
 		<div class="box">
-		<a href="https://www.taobao.com/"></a>
-		<p><img class="icon" src="./home_files/tb1.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">淘宝</font></font></p>
-		</div>
-
-		<div class="box">
 		<a href="https://www.jd.com/"></a>
 		<p><img class="icon" src="./home_files/jd.png"></p>
 		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">京东</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://www.youtube.com/"></a>
-		<p><img class="icon" src="./home_files/youtube2.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube</font></font></p>
 		</div>
 
 		<div class="box">
@@ -298,7 +293,7 @@
 
 		<div class="box">
 		<a href="https://github.com/"></a>
-		<p><img class="icon" src="./home_files/github.png"></p>
+		<p><img class="icon" src="./home_files/github.png" id="github"></p>
 		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></p>
 		</div>
 
@@ -306,12 +301,6 @@
 		<a href="https://www.mosoteach.cn/web/"></a>
 		<p><img class="icon" src="./home_files/lmy.png"></p>
 		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">蓝墨云</font></font></p>
-		</div>
-
-		<div class="box"> 
-		<a href="https://pintia.cn/"></a>
-		<p><img class="icon" src="./home_files/PPTV.PNG"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PTA</font></font></p>
 		</div>
 
 		<div class="box">
@@ -337,6 +326,7 @@
 		<p><img class="icon" src="./home_files/dy.png"></p>
 		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">斗鱼</font></font></p>
 		</div>
+		
 
 	</div>
 	
@@ -392,7 +382,21 @@
 	}
 	</script>
 	
-	
+	<div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+           
+        </div>
+    </div>
+        
+    <script src="home_files/assets/waifu-tips.js"></script>
+    <script src="home_files/assets/live2d.js"></script>
+    <script type="text/javascript">initModel("home_files/assets/")</script>
 	
 </body>
 </html>

@@ -1,4 +1,8 @@
 # chincccc.github.io  已解析至 https://home.chincc.tk
+2020.03.12
+
+  1.修改借用live2d项目(https://github.com/fghrsh/live2d_demo),加了一个可爱的看板娘   2.优化移动端布局  3.替换光标logo
+
 2020.02.26
 
   将github地址解析至 https://home.chincc.tk/  并添加搜索框输入联想

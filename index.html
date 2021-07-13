@@ -33,9 +33,7 @@
 			position: relative;
 			height: auto;
 		}
-		a,a:visited {
-			cursor:url(home_files/miku2.png),auto;
-		}
+
 		#login{position:absolute;top:-2px;right:0;color:#000;display: inline-block;text-decoration: none;}
 		.header{
 			padding-bottom:200px;
@@ -53,15 +51,16 @@
 			z-index:2;
 			max-width: 650px;
 		}
-		.box {
+		.col-sm box {
 			-webkit-animation: fadeInDown 1s;
 			animation: fadeInDown 1s;
 			position: relative;
 			display: inline-block;
 			width: 75px;
 			border: 0;
+			
 		}
-		.box a {
+		.col-sm box a {
 			width: 100%;
 			height: 100%;
 			position: absolute;
@@ -71,26 +70,9 @@
 		li{
             list-style: none;
         }
-		.url {
-			color:#000;
-			height: 1.7em;
-			line-height: 1.7em;
-			width: 72px;
-			font-size: 0.75em;
-			white-space: nowrap;
-			overflow: hidden;
-			margin: auto;
-			-webkit-border-top-right-radius: 5px;
-			-webkit-border-bottom-right-radius: 5px;
-			text-overflow: ellipsis;
-			-o-text-overflow: ellipsis;
-			-ms-text-overflow: ellipsis;
-			padding-top: 3px;
-			padding-bottom: 8px;
-		}
 		#ul{
             border: 0px;
-            margin:0px 23px 15px 0px
+            margin:0px;
         }
        #ul a{
             display: inline-block;
@@ -102,14 +84,15 @@
             line-height: 30px;
         }
 		.icon {
-			width: 3em;
-			height: 3em;
-			max-width: 72px;
+			width:100%;
+			height:100%;
+			display:block;
+			max-width:42px;
 		}
 		input {
 			outline:none;
 		}
-		.box:focus {  
+		.col-sm box:focus {  
 			outline:none;  
 			border: none;
 		}
@@ -129,57 +112,114 @@
 		}
 		
 		#search_input {
-			width: 90%;
-			height: 40px;
-			background-color: transparent;
-			border: none;
-			outline: 0;
-			font-size: 18px;
-			color: #000;
-			padding-right:0px;
-			border-radius: 50px
+			width: 90%!important;
+			height: 40px!important;
+			background-color: transparent!important;
+			border: none!important;
+			outline: 0!important;
+			font-size: 18px!important;
+			color: #000!important;
+			padding-right:0px!important;
+			border-radius: 50px!important;
 		}
 		.search_part {
-			margin-bottom: 30px;
-			margin-top: 20px;
+			margin-bottom: 30px!important;
+			margin-top: 20px!important;
 		}
 		.search_bar {
-			box-shadow: 0 0 18px rgba(70,70,40,.255);
-			-webkit-animation: fadeIn 2.5s;
-			animation: fadeIn 2.5s;
-			background-color: rgba(255,255,255,.100);
-			border-radius: 50px;
-			display: table;
-			vertical-align: middle;
-			width: 85%;
-			height: 40px;
-			max-width: 600px;
-			margin: 10px auto;
+			box-shadow: 0 0 18px rgba(70,70,40,.255)!important;
+			-webkit-animation: fadeIn 2.5s!important;
+			animation: fadeIn 2.5s!important;
+			background-color: rgba(255,255,255,.100)!important;
+			border-radius: 50px!important;
+			display: table!important;
+			vertical-align: middle!important;
+			width: 85%!important;
+			height: 40px!important;
+			max-width: 600px!important;
+			margin: 10px auto!important;
 		}
 		#search_submit {
-			outline: 0;
-			height: 40px;
-			float: right;
-			color: #F69;
-			font-size: 16px;
-			font-weight: 700;
-			border: none;
-			background-color: transparent;
-			padding: 2px 23px 2px 0px;
+			outline: 0!important;
+			height: 40px!important;
+			float: right!important;
+			color: #F69!important;
+			font-size: 16px!important;
+			font-weight: 700!important;
+			border: none!important;
+			background-color: transparent!important;
+			padding: 2px 23px 2px 0px!important;
 		}
 		#search_submit2 {
-			outline: 0;
-			height: 40px;
-			float: left;
-			color: #F69;
-			font-size: 16px;
-			font-weight: 700;
-			border: none;
-			background-color: transparent;
-			padding: 2px 0px 2px 23px;
+			outline: 0!important;
+			height: 40px!important;
+			float: left!important;
+			color: #F69!important;
+			font-size: 16px!important;
+			font-weight: 700!important;
+			border: none!important;
+			background-color: transparent!important;
+			padding: 2px 0px 2px 23px!important;
 		}
 		
-		
+		.box{
+			outline:none;
+			width:58px;
+			height:58px;
+			float:left;
+			margin:2px!important;
+			padding:8px!important;
+			text-align:center;
+			border:0px solid!important;
+			border-radius:15px!important;
+		}
+		.dropdown-toggle{
+			    -webkit-text-size-adjust: 100%;
+				-webkit-font-smoothing: antialiased;
+				font-family: Roboto,Helvetica,Arial,sans-serif;
+				direction: ltr;
+				list-style: none;
+				visibility: visible;
+				user-select: none;
+				box-sizing: border-box;
+				-webkit-tap-highlight-color: transparent;
+				cursor: url(home_files/miku2.png),auto;
+				background-color: transparent;
+				text-decoration: none;
+				transition: .3s ease;
+				font-size: 12px;
+				position: relative;
+				display: block;
+				padding: 10px 15px;
+				line-height: 20px;
+				font-weight: 400;
+				text-transform: uppercase;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				border-radius: 3px;
+				color: inherit;
+		}
+		#appcard{
+			margin-top: 15px;
+			border:0px solid;
+			border-radius:15px;
+			padding: 12px;
+			padding-left:20px;
+			box-shadow: 0.1rem .5rem 1rem rgba(0,0,0,.15)!important;
+		}
+		.center-in-center{
+			width:100%;
+			height:auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+			padding-top:80px;
+        }
 	</style>
 	<script>
 		window.onload = function(){
@@ -200,29 +240,30 @@
 	
 	<link rel="stylesheet" type="text/css" href="home_files/assets/waifu.css"/>
 	<script src="home_files/assets/jquery.min.js"></script>
+	<link rel="stylesheet" id="bootstrap-css" href="home_files/assets/bootstrap.min.css" type="text/css" media="all">
+	<script type="text/javascript" src="home_files/assets/bootstrap.min.js" id="jquery-bootstrap-js"></script>
+	<link rel="stylesheet" id="bootstrap-css" href="home_files/assets/style.min(1).css" type="text/css" media="all">
+	
 	
 </head>
 
 
 <body id="a">
-	<!--<a id="login" href="http://10.21.5.111/eportal/index.jsp">〇</a>-->
+	<div id="content"  class="center-in-center">
+		
 	
-	<!-- 搜索框上面小图 -->
-	<div class="header">
-	<!--
-	<img class="ct" src="./home_files/7.png" width="384px" height="216px">
-	-->
-	</div>
 	
-	<div id="content">
 		<div class="search_part">
 		<div class="logo">
 			<img id="smaller" src="./home_files/GoogleLogo.gif">
+			
 		</div>
 		<form onsubmit="return search()" class="search_bar">
 			<font style="vertical-align: inherit;">
 				<font style="vertical-align: inherit;">
+				
 					<input type="submit" id="search_submit" value="百度"></input>
+					
 					<button type="button" id="search_submit2" onclick="bing()">必应</button>
 				</font>
 			</font>
@@ -232,110 +273,104 @@
         	</span>
 		</form>
 		</div>
-	</div>
-
-
-	<div class="footer">
-
-		<div class="box" style="outline:none"> 
-		<a href="https://www.chincc.tk/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/zhs.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">停车场</font></font></p>
-		</div>
-
-		<div class="box" style="outline:none"> 
-		<a href="https://www.google.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/Google.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">谷歌</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://translate.google.cn/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/fy.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://mail.qq.com" target="_blank"></a>
-		<p><img class="icon" src="./home_files/yx.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮箱</font></font></p>
-		</div>
-			
-		<div class="box">
-		<a href="https://pan.baidu.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/bdy.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">百度云</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://cowtransfer.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/cow.png" id="cow"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快传</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://www.zhihu.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/zh.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">知乎</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://www.jd.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/jd.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">京东</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="http://www.acfun.cn/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/ac.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AC Fun</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://www.bilibili.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/dm.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bilibili</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://github.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/github.png" id="github"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://www.mosoteach.cn/web/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/lmy.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">蓝墨云</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="http://youku.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/yk.PNG"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优酷</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="https://v.qq.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/txsp.PNG"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">腾讯视频</font></font></p>
-		</div>
-
-		<div class="box">
-		<a href="http://www.iqiyi.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/aqy.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爱奇艺</font></font></p>
-		</div>
-			
-		<div class="box">
-		<a href="https://www.douyu.com/" target="_blank"></a>
-		<p><img class="icon" src="./home_files/dy.png"></p>
-		<p class="url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">斗鱼</font></font></p>
-		</div>
 		
-
 	</div>
 	
+	
+	<div class="header" style="text-align:left;padding:25px 0px 0px 25px;">
+	<button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+	快捷访问
+	</button>
+	<div class="collapse" id="collapseExample">
+		<div class="card card-body" style="width:285px;z-index:10;">
+			<ul class="nav shadow p-3 mb-5 bg-white rounded" id="appcard" >
+				<li>
+								
+				 
+				<a title="停车场" href="https://www.chincc.tk/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/zhs.png">
+				</a>
+
+				 
+				<a title="谷歌" href="https://www.google.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/Google.png">
+				</a>
+
+
+				<a title="翻译" href="https://translate.google.cn/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/fy.png">
+				</a>
+
+
+				<a title="邮箱" href="https://mail.qq.com" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/yx.png">
+				</a>
+
+
+
+				<a title="百度云" href="https://pan.baidu.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/bdy.png">
+				</a>
+
+
+				<a title="快传" href="https://cowtransfer.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/cow.png" id="cow">
+				</a>
+
+				<a title="知乎" href="https://www.zhihu.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/zh.png">
+				</a>
+
+
+				<a title="京东" href="https://www.jd.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/jd.png">
+				</a>
+
+
+				<a title="AC Fun" href="http://www.acfun.cn/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/ac.png">
+				</a>
+
+
+				<a title="bilibili" href="https://www.bilibili.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/dm.png">
+				</a>
+
+
+				<a title="GitHub" href="https://github.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/github.png" id="github">
+				</a>
+
+
+				<a title="优酷" href="http://youku.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/yk.PNG">
+				</a>
+
+
+				<a title="腾讯视频" href="https://v.qq.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/txsp.PNG">
+				</a>
+
+
+				<a title="爱奇艺" href="http://www.iqiyi.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/aqy.png">
+				</a>
+					
+
+				<a title="斗鱼" href="https://www.douyu.com/" target="_blank" class="col-sm box">
+					<img class="icon" src="./home_files/dy.png">
+				</a>
+				
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+	</div>
+	
+	
+	
+
 	<script>
         var input = document.getElementById('search_input')
         var oUl = document.getElementById('ul')
@@ -388,35 +423,6 @@
 	}
 	</script>
 	
-	<div class="waifu">
-        <div class="waifu-tips"></div>
-        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-        <div class="waifu-tool">
-            <span class="fui-chat"></span>
-            <span class="fui-home"></span>
-            <span class="fui-user"></span>
-            <span class="fui-photo"></span>
-            <span class="fui-cross"></span>
-        </div>
-    </div>
-        
-    <script src="home_files/assets/waifu-tips.js"></script>
-    <script src="home_files/assets/live2d.js"></script>
-    <script type="text/javascript">initModel("home_files/assets/")</script>
-
-
-    <!-- 彩条 -->
-    <script async type="text/javascript" size="110" alpha="0.1" zIndex="3" src="home_files/ribbon.min.js"></script>
-    <!-- 悬浮粒子 -->
-    <!--
-    <script type="text/javascript" color="220,159,180" pointColor="220,159,180" opacity='1' zIndex="-2" count="50" src="home_files/canvas-nest.js"></script>
-
-    <script type="text/javascript" color="134,193,102" pointColor="134,193,102" opacity='1' zIndex="-2" count="80" src="home_files/canvas-nest.js"></script>
-
-    <script type="text/javascript" color="36,147,110" pointColor="36,147,110" opacity='1' zIndex="-2" count="40" src="home_files/canvas-nest.js"></script>
-    <script type="text/javascript" color="134,166,151" pointColor="134,166,151" opacity='1' zIndex="-2" count="40" src="home_files/canvas-nest.js"></script>
-    -->
-    <script type="text/javascript" color="134,193,102" opacity="0.5" count="89" src="home_files/canvas2.js"></script>
     
 	
 </body>

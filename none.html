@@ -30,14 +30,11 @@
 			padding-top:100px;
 			width: 100%;
 			padding:0;
-			position: relative;
-			height: auto;
+			height:100vh;
 		}
 
 		#login{position:absolute;top:-2px;right:0;color:#000;display: inline-block;text-decoration: none;}
-		.header{
-			padding-bottom:200px;
-		}
+		
 		#content {
 			padding-bottom:260px;
 			width: 100%;
@@ -167,11 +164,11 @@
 			width:58px;
 			height:58px;
 			float:left;
-			margin:2px!important;
-			padding:8px!important;
+			margin:3px!important;
+			padding:10px!important;
 			text-align:center;
 			border:0px solid!important;
-			border-radius:15px!important;
+			border-radius:12px!important;
 		}
 		.dropdown-toggle{
 			    -webkit-text-size-adjust: 100%;
@@ -206,6 +203,15 @@
 			padding: 12px;
 			padding-left:20px;
 			box-shadow: 0.1rem .5rem 1rem rgba(0,0,0,.15)!important;
+			background-color:#fff;
+		}
+		#tqcard{
+			margin-top: 15px;
+			border:0px solid;
+			border-radius:15px;
+			box-shadow: 0.1rem .5rem 1rem rgba(0,0,0,.15)!important;
+			text-align:right;
+			background-color:#fff;
 		}
 		.center-in-center{
 			width:100%;
@@ -248,7 +254,7 @@
 </head>
 
 
-<body id="a">
+<body id="a" style="position:absolute;">
 	<div id="content"  class="center-in-center">
 		
 	
@@ -277,96 +283,113 @@
 	</div>
 	
 	
-	<div class="header" style="text-align:left;padding:25px 0px 0px 25px;">
-	<button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-	快捷访问
-	</button>
-	<div class="collapse" id="collapseExample">
-		<div class="card card-body" style="width:285px;z-index:10;">
-			<ul class="nav shadow p-3 mb-5 bg-white rounded" id="appcard" >
-				<li>
-								
-				 
-				<a title="停车场" href="https://www.chincc.tk/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/zhs.png">
-				</a>
+	<div id="" style="top:25px;left:25px;position:fixed;">
+		
+		<button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		快捷访问
+		</button>
+		<div class="collapse" id="collapseExample">
+			<div class="card card-body" style="top:65px;left:25px;width:250px;height:auto;position:fixed;z-index:10;">
+				<ul class="nav shadow p-3 mb-5 bg-white rounded" id="appcard" style="padding-left:30px;">
+					<li>
+									
+					 
+					<a title="停车场" href="https://www.chincc.tk/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/zhs.png">
+					</a>
 
-				 
-				<a title="谷歌" href="https://www.google.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/Google.png">
-				</a>
-
-
-				<a title="翻译" href="https://translate.google.cn/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/fy.png">
-				</a>
+					 
+					<a title="谷歌" href="https://www.google.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/Google.png">
+					</a>
 
 
-				<a title="邮箱" href="https://mail.qq.com" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/yx.png">
-				</a>
+					<a title="翻译" href="https://translate.google.cn/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/fy.png">
+					</a>
+
+
+					<a title="邮箱" href="https://mail.qq.com" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/yx.png">
+					</a>
 
 
 
-				<a title="百度云" href="https://pan.baidu.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/bdy.png">
-				</a>
+					<a title="百度云" href="https://pan.baidu.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/bdy.png">
+					</a>
 
 
-				<a title="快传" href="https://cowtransfer.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/cow.png" id="cow">
-				</a>
+					<a title="快传" href="https://cowtransfer.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/cow.png" id="cow">
+					</a>
 
-				<a title="知乎" href="https://www.zhihu.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/zh.png">
-				</a>
-
-
-				<a title="京东" href="https://www.jd.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/jd.png">
-				</a>
+					<a title="知乎" href="https://www.zhihu.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/zh.png">
+					</a>
 
 
-				<a title="AC Fun" href="http://www.acfun.cn/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/ac.png">
-				</a>
+					<a title="京东" href="https://www.jd.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/jd.png">
+					</a>
 
 
-				<a title="bilibili" href="https://www.bilibili.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/dm.png">
-				</a>
+					<a title="AC Fun" href="http://www.acfun.cn/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/ac.png">
+					</a>
 
 
-				<a title="GitHub" href="https://github.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/github.png" id="github">
-				</a>
+					<a title="bilibili" href="https://www.bilibili.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/dm.png">
+					</a>
 
 
-				<a title="优酷" href="http://youku.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/yk.PNG">
-				</a>
+					<a title="GitHub" href="https://github.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/github.png" id="github">
+					</a>
 
 
-				<a title="腾讯视频" href="https://v.qq.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/txsp.PNG">
-				</a>
+					<a title="优酷" href="http://youku.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/yk.PNG">
+					</a>
 
 
-				<a title="爱奇艺" href="http://www.iqiyi.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/aqy.png">
-				</a>
+					<a title="腾讯视频" href="https://v.qq.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/txsp.PNG">
+					</a>
+
+
+					<a title="爱奇艺" href="http://www.iqiyi.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/aqy.png">
+					</a>
+						
+
+					<a title="斗鱼" href="https://www.douyu.com/" target="_blank" class="col-sm box">
+						<img class="icon" src="./home_files/dy.png">
+					</a>
 					
-
-				<a title="斗鱼" href="https://www.douyu.com/" target="_blank" class="col-sm box">
-					<img class="icon" src="./home_files/dy.png">
-				</a>
-				
-				</li>
-			</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>	
+	
+	<div style="top:25px;right:25px;position:fixed;">
+		<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+		小部件
+		</button>
+		<div class="collapse" id="collapseExample2">
+			<div class="card card-body" style="top:65px;right:25px;width:250px;height:auto;position:fixed;z-index:10;">
+				<div class="nav shadow p-3 mb-5 bg-white rounded" id="tqcard" >
+					<div id="tq" style="width: 230;height:auto;padding:10px!important;">
+						<div id="he-plugin-standard"></div>
+                    </div>
+				</div>
+			</div>
 		</div>
 	</div>
-		
-	</div>
+	
 	
 	
 	
@@ -395,6 +418,17 @@
             }
         }
     </script>
+	<script>
+                        WIDGET = {
+                            "CONFIG": {
+                                "layout": "2",
+                                "borderRadius": "15",
+                                "key": "cd01bcb266444486828eae341c28b0f6"
+                            }
+                        }
+                        
+                    </script>
+                    <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
 	
 	<script type="text/javascript">
 	function search()
